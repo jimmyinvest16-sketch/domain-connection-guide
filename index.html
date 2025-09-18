@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoDaddy Domain Connection Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">Domain Connection Guide</h1>
+                <nav class="nav">
+                    <a href="#overview" class="nav-link">Overview</a>
+                    <a href="#transfer" class="nav-link">Transfer Method</a>
+                    <a href="#dns" class="nav-link">DNS Method</a>
+                    <a href="#troubleshooting" class="nav-link">Troubleshooting</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Your Complete Guide to Connecting a Domain to GoDaddy</h1>
+                    <p class="hero-description">Learn how to connect your domain to GoDaddy using two proven methods: domain transfer and DNS configuration. Step-by-step instructions with troubleshooting tips included.</p>
+                    <div class="hero-buttons">
+                        <a href="#overview" class="btn btn-primary">Get Started</a>
+                        <a href="#comparison" class="btn btn-secondary">Compare Methods</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="overview" class="section">
+            <div class="container">
+                <h2 class="section-title">Overview</h2>
+                <div class="overview-grid">
+                    <div class="overview-card">
+                        <div class="card-icon">🔄</div>
+                        <h3>Domain Transfer</h3>
+                        <p>Move your domain registration to GoDaddy for centralized management</p>
+                        <ul>
+                            <li>$11.99 flat fee</li>
+                            <li>Free year extension</li>
+                            <li>5-7 days to complete</li>
+                        </ul>
+                    </div>
+                    <div class="overview-card">
+                        <div class="card-icon">🌐</div>
+                        <h3>DNS Connection</h3>
+                        <p>Keep your current registrar but point your domain to GoDaddy services</p>
+                        <ul>
+                            <li>No transfer fees</li>
+                            <li>Keep existing registrar</li>
+                            <li>24-48 hours to propagate</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="comparison" class="section section-gray">
+            <div class="container">
+                <h2 class="section-title">Method Comparison</h2>
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>Domain Transfer</th>
+                                <th>DNS Connection</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cost</td>
+                                <td>$11.99 + free year</td>
+                                <td>Free</td>
+                            </tr>
+                            <tr>
+                                <td>Time to Complete</td>
+                                <td>5-7 days</td>
+                                <td>24-48 hours</td>
+                            </tr>
+                            <tr>
+                                <td>Registrar</td>
+                                <td>Changes to GoDaddy</td>
+                                <td>Stays with current</td>
+                            </tr>
+                            <tr>
+                                <td>Management</td>
+                                <td>Centralized at GoDaddy</td>
+                                <td>Split between providers</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="transfer" class="section">
+            <div class="container">
+                <h2 class="section-title">Method 1: Domain Transfer</h2>
+                
+                <div class="method-content">
+                    <div class="prerequisites">
+                        <h3>Prerequisites</h3>
+                        <div class="step-list">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Unlock Your Domain</h4>
+                                    <p>Contact your current registrar to unlock your domain for transfer</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Get Authorization Code</h4>
+                                    <p>Obtain the auth code (EPP code) from your current registrar</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Verify Contact Info</h4>
+                                    <p>Ensure your domain's contact information is up-to-date</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="restrictions">
+                        <h3>Important Restrictions</h3>
+                        <div class="alert alert-warning">
+                            <p><strong>Note:</strong> Domains cannot be transferred within 60 days of:</p>
+                            <ul>
+                                <li>New registration</li>
+                                <li>Previous transfer</li>
+                                <li>Contact information changes (if 60-day lock applied)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="transfer-steps">
+                        <h3>Transfer Process</h3>
+                        <div class="step-list">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Visit GoDaddy Transfers Page</h4>
+                                    <p>Go to GoDaddy's domain transfer page and search for your domain</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Verify Domain Status</h4>
+                                    <p>Confirm your domain shows as unlocked (green status bar)</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Enter Authorization Code</h4>
+                                    <p>Input the auth code from your current registrar</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h4>Complete Checkout</h4>
+                                    <p>Choose domain protection options and finalize the transfer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dns" class="section section-gray">
+            <div class="container">
+                <h2 class="section-title">Method 2: DNS Connection</h2>
+                
+                <div class="method-content">
+                    <div class="dns-hosting">
+                        <h3>Understanding DNS Hosting</h3>
+                        <p>Your DNS management location depends on where your nameservers point:</p>
+                        
+                        <div class="dns-scenarios">
+                            <div class="scenario">
+                                <h4>Scenario 1: Domain + GoDaddy Nameservers</h4>
+                                <p>Domain registered with GoDaddy, using GoDaddy nameservers</p>
+                                <span class="scenario-result">→ Manage DNS in GoDaddy account</span>
+                            </div>
+                            <div class="scenario">
+                                <h4>Scenario 2: External Domain + GoDaddy Nameservers</h4>
+                                <p>Domain not registered with GoDaddy, but using GoDaddy nameservers</p>
+                                <span class="scenario-result">→ Manage DNS in GoDaddy account</span>
+                            </div>
+                            <div class="scenario">
+                                <h4>Scenario 3: External Domain + External Nameservers</h4>
+                                <p>Domain registered elsewhere, not using GoDaddy nameservers</p>
+                                <span class="scenario-result">→ Manage DNS with current provider</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dns-steps">
+                        <h3>DNS Connection Process</h3>
+                        <div class="step-list">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Access Domain Registrar</h4>
+                                    <p>Log in to your current domain registrar's control panel</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Find DNS Management</h4>
+                                    <p>Navigate to DNS settings or nameserver management</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Switch to Custom Nameservers</h4>
+                                    <p>Change from default to custom nameserver settings</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h4>Enter GoDaddy Nameservers</h4>
+                                    <p>Input the NS1 and NS2 addresses provided by GoDaddy</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">5</div>
+                                <div class="step-content">
+                                    <h4>Save and Verify</h4>
+                                    <p>Save changes and wait 24-48 hours for propagation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dns-records" class="section">
+            <div class="container">
+                <h2 class="section-title">Common DNS Record Types</h2>
+                <div class="dns-records-grid">
+                    <div class="dns-record">
+                        <h4>A Record</h4>
+                        <p>Connects your domain to an IP address for website hosting</p>
+                    </div>
+                    <div class="dns-record">
+                        <h4>CNAME</h4>
+                        <p>Points to another domain or URL (cannot point to IP address)</p>
+                    </div>
+                    <div class="dns-record">
+                        <h4>MX Record</h4>
+                        <p>Manages email routing and ensures messages reach your inbox</p>
+                    </div>
+                    <div class="dns-record">
+                        <h4>TXT Record</h4>
+                        <p>Verifies domain ownership and sets up email sender policies</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="troubleshooting" class="section section-gray">
+            <div class="container">
+                <h2 class="section-title">Troubleshooting Common Issues</h2>
+                <div class="troubleshooting-grid">
+                    <div class="troubleshooting-item">
+                        <h4>Website Not Loading After Changes</h4>
+                        <ul>
+                            <li>Wait up to 48 hours for DNS propagation</li>
+                            <li>Clear your browser cache</li>
+                            <li>Use DNS lookup tools to verify settings</li>
+                        </ul>
+                    </div>
+                    <div class="troubleshooting-item">
+                        <h4>Can't Find Authorization Code</h4>
+                        <ul>
+                            <li>Check your email from the registrar</li>
+                            <li>Look in your registrar's control panel</li>
+                            <li>Contact your current registrar for assistance</li>
+                        </ul>
+                    </div>
+                    <div class="troubleshooting-item">
+                        <h4>Transfer Taking Too Long</h4>
+                        <ul>
+                            <li>Check email for approval requests</li>
+                            <li>Verify authorization code is correct</li>
+                            <li>Contact GoDaddy support for status update</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Connect Your Domain?</h2>
+                    <p>Choose the method that works best for your situation and follow our step-by-step guide.</p>
+                    <div class="cta-buttons">
+                        <a href="#transfer" class="btn btn-primary">Start Domain Transfer</a>
+                        <a href="#dns" class="btn btn-secondary">Configure DNS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Domain Connection Guide. All rights reserved.</p>
+                <p>Need help? Contact GoDaddy support for assistance with your domain connection.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
